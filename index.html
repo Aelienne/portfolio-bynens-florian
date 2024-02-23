@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="descritpion"
+      name="description"
       content="voila mon cv personnel de 2024 en html/css"
     />
     <meta
@@ -14,21 +14,28 @@
     <meta name="author" content="Bynens Florian" />
     <link rel="stylesheet" href="styles.css" />
     <title>Florian Bynens Portfolio</title>
+    <script src="javascript.js"></script>
   </head>
   <body id="topbody">
     <header id="profil">
       <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        expedita veritatis deserunt dolores harum debitis quia excepturi amet in
-        dolorem reiciendis nesciunt obcaecati eligendi maxime itaque, corrupti
-        ab, eveniet explicabo!
+        Actuellement en formation de développeur web/web mobile je suis à la
+        recherche d'un stage pour croître mes compétences en cours
+        d'acquisitions. L'adaptabilité et l'esprit d'équipe sont ce qui me
+        caractérise. Je mets ces compétences à l’œuvre dans toutes mes
+        expériences professionnelles afin de saisir ce qu’il y a de plus
+        intéressant dans toutes les situations.
       </h1>
       <figure>
         <img
           src="imgs/profilimg.webp"
           alt="ceci est mon image de profil, ma tête quoi..."
         />
+        <a href="https://github.com/Aelienne" target="_blank"
+          >Mon Profil Github</a
+        >
       </figure>
+
       <ul>
         <li><a href="#profil">Profil</a></li>
         <li><a href="#leftside1">Professionnal experiences/Studies</a></li>
@@ -40,9 +47,9 @@
     <main>
       <div>
         <div>
-          <section id="leftside1">
-            <ul>
-              <li>
+          <section id="leftside1" class="reveal-loaded">
+            <ul class="reveal">
+              <li class="reveal-1">
                 <h2>ECTRA logistique industrielle</h2>
                 <p>
                   Gestion de la base de données avec le programme GEODE. <br />
@@ -50,15 +57,15 @@
                   Coordination Clients/Fournisseurs.
                 </p>
               </li>
-              <li>
+              <li class="reveal-2">
                 <h2>Création et conception de site web</h2>
                 <p>
                   Utilisation et compréhension de l’outil WordPress. <br />
                   Web au Web design : Construction et modification de
-                  l’interface, responsive design. <br />
+                  l’interface, responsive design.
                 </p>
               </li>
-              <li>
+              <li class="reveal-3">
                 <h2>Adecco, Genève Aéroport</h2>
                 <p>
                   Accueil clientèle, conseils client. <br />
@@ -68,27 +75,40 @@
               </li>
             </ul>
           </section>
-          <section id="rightside1">
-            <ul>
-              <li>
+          <section id="rightside1" class="reveal-loaded-right">
+            <ul class="reveal">
+              <li class="reveal-3">
                 <h2>Human Booster</h2>
-                <p>Développeur Web/Web Mobile</p>
+                <p>
+                  Développeur Web/Web Mobile <br />
+                  Front-end / Back-end <br />
+                  Maquettage / Design <br />
+                  Titre RNCP niveau 5
+                </p>
               </li>
-              <li>
+              <li class="reveal-2">
                 <h2>Openclasseroom</h2>
-                <p>Formation Autididacte Développeur web HTML, CSS, JS</p>
+                <p>
+                  Formation Autididacte Développeur web statique<br />
+                  Front-end<br />
+                  Responsive design
+                </p>
               </li>
-              <li>
+              <li class="reveal-1">
                 <h2>Université Joseph Fourier</h2>
-                <p>2ème Année Licence STAPS</p>
+                <p>
+                  2ème Année Licence STAPS <br />
+                  Spécialisation Volley <br />
+                  Poste passeur
+                </p>
               </li>
             </ul>
           </section>
         </div>
         <div>
-          <section id="leftside2">
-            <ul>
-              <li>
+          <section id="leftside2" class="reveal-loaded">
+            <ul class="reveal">
+              <li class="reveal-1">
                 <h2>Front-end</h2>
                 <p>
                   <img
@@ -115,7 +135,7 @@
                   JavaScript
                 </p>
               </li>
-              <li>
+              <li class="reveal-2">
                 <h2>Back-end</h2>
                 <p>
                   <img
@@ -136,9 +156,9 @@
               </li>
             </ul>
           </section>
-          <section id="rightside2">
-            <ul>
-              <li>
+          <section id="rightside2" class="reveal-loaded-right">
+            <ul class="reveal">
+              <li class="reveal-2">
                 <h2>Technologies</h2>
                 <p>
                   <img
@@ -158,14 +178,14 @@
                 </p>
                 <p>
                   <img
-                    src="imgs/linux-icon.svg"
-                    alt="Ceci est un logo de Linux"
+                    src="imgs/angular-icon.svg"
+                    alt="Ceci est un logo de Angular"
                     class="logoicon"
                   />
-                  Linux
+                  Angular
                 </p>
               </li>
-              <li>
+              <li class="reveal-1">
                 <h2>Others</h2>
                 <p>
                   <img
@@ -185,11 +205,11 @@
                 </p>
                 <p>
                   <img
-                    src="imgs/clickup-icon.svg"
-                    alt="Ceci est un logo de l'outil Clickup"
+                    src="imgs/linux-icon.svg"
+                    alt="Ceci est un logo de Linux"
                     class="logoicon"
                   />
-                  Clickup
+                  Linux
                 </p>
               </li>
             </ul>
@@ -232,11 +252,29 @@
       </address>
     </footer>
     <div id="topbtt">
-      <a href="#topbody"
-        ><img
-          src="imgs/to-top.webp"
-          alt="Ceci est le bouton pour remonter en haut de page"
-      /></a>
+      <a href="#topbody">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="64"
+          version="1.1"
+          height="64"
+          viewBox="0 0 64 64"
+          enable-background="new 0 0 64 64"
+          title="Ceci est un bouton pour remonter en haut de page"
+        >
+          <g>
+            <g fill="white">
+              <path
+                d="m33.17,20.01c-0.201-0.202-0.477-0.37-0.742-0.471-0.74-0.272-1.562-0.097-2.117,0.459l-15.879,15.881c-0.781,0.781-0.781,2.047 0,2.828s2.047,0.781 2.828,0l14.474-14.477 14.486,14.486c0.391,0.391 0.902,0.586 1.414,0.586s1.023-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828l-15.878-15.878z"
+              />
+              <path
+                d="M32,0C14.355,0,0,14.355,0,32s14.355,32,32,32s32-14.355,32-32S49.645,0,32,0z M32,60    C16.561,60,4,47.439,4,32S16.561,4,32,4s28,12.561,28,28S47.439,60,32,60z"
+              />
+            </g>
+          </g>
+        </svg>
+      </a>
     </div>
   </body>
 </html>

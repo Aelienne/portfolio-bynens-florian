@@ -13,8 +13,20 @@ body header {
   margin: 40px 0px;
 }
 body header h1 {
-  width: 350px;
-  font-size: 16px;
+  width: 500px;
+  font-size: 18px;
+}
+body header figure {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body header figure a {
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
 }
 body header figure img {
   width: 150px;
@@ -23,7 +35,7 @@ body header figure img {
   box-shadow: rgb(255, 255, 255) 0px 5px 15px;
 }
 body header ul {
-  width: 350px;
+  width: 500px;
   list-style: none;
   display: flex;
   padding-inline-start: 0px;
@@ -33,6 +45,7 @@ body header ul li {
   margin: 5px;
 }
 body header ul li a {
+  font-size: 20px;
   text-decoration: none;
   color: white;
   border: solid 1px black;
@@ -127,14 +140,14 @@ body main div div section ul li p img {
 }
 body main div div section ul li h2 {
   width: 100%;
-  height: 35px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 body main div div section ul li p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 body main div div section#leftside1, body main div div section#leftside2 {
   border-right: solid 2px white;
@@ -161,23 +174,55 @@ body footer address a {
 body div#topbtt a {
   bottom: 15px;
   position: fixed;
-  margin-left: 90%;
+  margin-left: 92%;
   transition: 0.3s linear;
 }
 body div#topbtt a:hover {
   transform: scale(1.2);
 }
-body div#topbtt a img {
+body div#topbtt a svg {
   width: 50px;
   height: 50px;
-  border: solid 2px white;
-  border-radius: 60%;
+}
+
+.reveal-loaded .reveal [class*=reveal-] {
+  transform: translateX(-100vw);
+}
+
+.reveal-loaded [class*=reveal] {
+  transition: 1s;
+}
+
+.reveal-loaded .reveal-1 {
+  transition-delay: 0.3s;
+}
+
+.reveal-loaded .reveal-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-loaded .reveal-3 {
+  transition-delay: 0.1s;
+}
+
+.reveal-loaded-right .reveal [class*=reveal-] {
+  transform: translateX(100vw);
 }
 
 @media (max-width: 768px) {
   body header {
     flex-wrap: wrap;
     text-align: center;
+  }
+  body header ul {
+    width: 100%;
+  }
+  body header ul li a {
+    font-size: 25px;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+  }
+  body header ul li a:hover {
+    font-size: 25px;
   }
   body main div {
     margin-bottom: 200px;
@@ -199,6 +244,13 @@ body div#topbtt a img {
   body main div div section ul li:hover {
     transform: none;
   }
+  body main div div section ul li h2 {
+    font-size: 28px;
+  }
+  body main div div section ul li p {
+    font-size: 20px;
+    margin: 15px;
+  }
   body main div div section#leftside1, body main div div section#leftside2 {
     border-right: none;
   }
@@ -212,5 +264,9 @@ body div#topbtt a img {
   }
   body main div section#projects ul li {
     width: 100%;
+  }
+  body div#topbtt a {
+    margin-left: 82%;
+    bottom: 5px;
   }
 }/*# sourceMappingURL=styles.css.map */
