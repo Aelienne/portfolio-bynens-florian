@@ -2,6 +2,7 @@ html
     scroll-behavior: smooth
 body
     background: rgb(59, 59, 59)
+    margin: 5px
     header
         display: flex
         justify-content: center
@@ -111,14 +112,14 @@ body
                             flex-direction: column
                             margin: 5px
                             padding: 5px
-                            transition: 0.3s linear
+                            transition: transform 0.3s linear
                             p
                                 display: flex
                                 align-items: center
                                 justify-content: center
                                 text-align: center
                             &:hover
-                                transform: scale(1.2)
+                                transform: scale(1.1)
                             p
                                 img
                                     width: 30px
@@ -149,7 +150,7 @@ body
             bottom: 15px
             position: fixed
             margin-left: 92%
-            transition: 0.3s linear
+            transition: transform 0.3s linear
             &:hover
                 transform: scale(1.2)
             svg
