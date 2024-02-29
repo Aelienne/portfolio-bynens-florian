@@ -23,11 +23,18 @@ body header figure {
   flex-direction: column;
   text-align: center;
 }
-body header figure a {
+body header figure div {
   margin-top: 15px;
+}
+body header figure div a {
   text-decoration: none;
   font-size: 20px;
   color: white;
+  margin: 10px;
+}
+body header figure div a svg {
+  width: 40px;
+  height: 40px;
 }
 body header figure img {
   width: 150px;
@@ -76,6 +83,7 @@ body main div section#projects ul {
   display: flex;
   justify-content: space-evenly;
   height: auto;
+  padding: 0px;
 }
 body main div section#projects ul li {
   background-color: rgb(29, 29, 29);
@@ -98,7 +106,7 @@ body main div section#projects ul li a img {
      object-fit: cover;
 }
 body main div section#projects ul li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 body main div div {
   display: flex;
@@ -158,19 +166,66 @@ body main div div section#leftside2, body main div div section#rightside2 {
   padding-bottom: 240px;
 }
 body footer {
-  margin-top: 100px;
-  margin-bottom: 60px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
 }
-body footer h3 {
-  font-size: 24px;
+body footer form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgb(29, 29, 29);
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+body footer form h3 {
   color: white;
 }
-body footer address {
-  font-size: 20px;
+body footer form input {
+  height: 30px;
+  color: white;
 }
-body footer address a {
-  text-decoration: none;
+body footer form input {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+body footer form input::-moz-placeholder {
+  color: white;
+}
+body footer form input::placeholder {
+  color: white;
+}
+body footer form textarea {
+  height: 100px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+body footer form textarea::-moz-placeholder {
+  color: white;
+}
+body footer form textarea::placeholder {
+  color: white;
+}
+body footer form button {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+body footer div {
+  background: black;
+  width: 100%;
+}
+body footer div p {
+  font-size: 20px;
   color: white;
 }
 body div#topbtt a {

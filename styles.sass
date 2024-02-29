@@ -17,11 +17,16 @@ body
             display: flex
             flex-direction: column
             text-align: center
-            a
+            div
                 margin-top: 15px
-                text-decoration: none
-                font-size: 20px
-                color: white
+                a
+                    text-decoration: none
+                    font-size: 20px
+                    color: white
+                    margin: 10px
+                    svg
+                        width: 40px
+                        height: 40px
             img
                 width: 150px
                 height: 150px
@@ -67,6 +72,7 @@ body
                     display: flex
                     justify-content: space-evenly
                     height: auto
+                    padding: 0px
                     li
                         background-color: rgb(29, 29, 29)
                         box-shadow: rgb(255, 255, 255) 0px 5px 15px
@@ -84,7 +90,7 @@ body
                                 height: 100%
                                 object-fit: cover
                         &:hover
-                            transform: scale(1.1)
+                            transform: scale(1.05)
             div
                 display: flex
                 flex-direction: row
@@ -134,17 +140,52 @@ body
                 section#leftside2, section#rightside2
                     padding-bottom: 240px
     footer
-        margin-top: 100px
-        margin-bottom: 60px
         text-align: center
-        h3
-            font-size: 24px
-            color: white
-        address
-            font-size: 20px
-            a
-                text-decoration: none
+        display: flex
+        align-items: center
+        flex-direction: column
+        margin-top: 60px
+        form
+            display: flex
+            flex-direction: column
+            width: 50%
+            border: solid 1px black
+            border-radius: 10px
+            padding: 20px
+            background: rgb(29, 29, 29)
+            text-align: center
+            margin-top: 60px
+            margin-bottom: 60px
+            h3
                 color: white
+            input
+                height: 30px
+                color: white
+                &
+                    background-color: rgba(0, 0, 0, 0.8)
+                    border-radius: 10px
+                    &::placeholder
+                        color: white
+            textarea
+                height: 100px
+                color: white
+                background-color: rgba(0, 0, 0, 0.8)
+                border-radius: 10px
+                &::placeholder
+                    color: white
+            button
+                width: 30%
+                background-color: rgba(0, 0, 0, 0.8)
+                color: white
+                border-radius: 10px
+                margin: 10px auto
+        div
+            background: black
+            width: 100%
+            p
+                font-size: 20px
+                color: white
+
     div#topbtt
         a
             bottom: 15px
