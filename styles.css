@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #101010;
+}
+::-webkit-scrollbar-thumb {
+  background: #202020;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c2c2c;
+  box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+}
+
 html {
   scroll-behavior: smooth;
 }
